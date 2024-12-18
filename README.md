@@ -72,7 +72,7 @@ limited manner, similar to a digital town hall, as follows:
 > FedRAMP will consider only the content of the message when responding, and
 > will not prioritize or otherwise consider the individual or organization when
 > determining which messages to respond to. A response from FedRAMP is not an
-> endorsement of the poster and does not represent concurrence with the content.
+> endorsement and does not represent concurrence with the content.
 
 Each public comment request may have multiple rounds, with comments being
 addressed in no smaller than 30 day increments.
