@@ -23,20 +23,18 @@ way.
 
 ## How will FedRAMP request comments?
 
-FedRAMP will create a fork of this repo to initiate an RFC for specific topics.
-All discussion and participation will take place in the fork, with the outcome
+FedRAMP will copy this repo to initiate an RFC for specific topics. All
+discussion and participation will take place in the copy, with the outcome
 merged into this repo when the RFC is closed.
 
-The forked repo will have [Discussions](https://docs.github.com/en/discussions)
+The copied repo will have [Discussions](https://docs.github.com/en/discussions)
 enabled and stakeholders are encouraged to create new discussions with your
-feedback and interact with feedback provided by others. The FedRAMP team may
-seek clarification or participate in the discussion as appropriate, and may
-close discussions that have run their course after review.
+feedback and interact with feedback provided by others.
 
 FedRAMP will communicate to the public about open RFCs via its various social
 channels, including blogs, email lists, and more. Multiple RFCs may be run
 simultaneously by the team, and the
-[status of all RFCs can be seen here](rfc/README.md).
+[status of all RFCs can be seen here](https://fedramp.gov/rfcs).
 
 ### Providing feedback
 
@@ -44,12 +42,13 @@ There are multiple ways to provide feedback on a full RFC:
 
 - Participate in the Discussion
 
-- Suggest changes to a document by opening a pull request (you will need to fork
-  this repo first). The pull request must suggest one or more changes and
-  describe the rationale for the change(s).
-
 - Follow the instructions in the RFC to use alternative mechanisms for public
   feedback, such as on-line forms or email.
+
+- Suggest changes to a document by opening a pull request (you will need to fork
+  the repo first). The pull request must suggest one or more changes and
+  describe the rationale for the change(s). Pull requests will be treated as
+  comments.
 
 It is important that each bit of feedback is _concise_ and _actionable_,
 providing enough information to allow the document maintainers to adequately
@@ -59,18 +58,24 @@ address the feedback.
 
 ### How FedRAMP will participate
 
-This engagement process is a feedback cycle, where discussion drives changes and
-further discussion. During the public comment period, the following will occur
-as a cycle:
+The FedRAMP team may interact with the public discussion in this repository in a
+limited manner, similar to a digital town hall, as follows:
 
-1. **Feedback and Discussion**
+- Requesting clarification or additional information if the content of a comment
+  is not clear to the FedRAMP reviewer.
 
-   - Engagement between FedRAMP authors and commenters, with responses to
-     feedback.
+- Acknowledging that comments have been reviewed.
 
-2. **Continuous Revision**
-   - FedRAMP authors will review and decide to accept or reject the feedback,
-     making appropriate edits.
+- Responding to requests for clarification from the public when that
+  clarification would be relevant to a significant portion of the public.
+
+> FedRAMP will consider only the content of the message when responding, and
+> will not prioritize or otherwise consider the individual or organization when
+> determining which messages to respond to. A response from FedRAMP is not an
+> endorsement and does not represent concurrence with the content.
+
+Each public comment request may have multiple rounds, with comments being
+addressed in no smaller than 30 day increments.
 
 The end of the public comment period **does not mean the policy will be
 immediately implemented.** Other governance activities and final approval will
