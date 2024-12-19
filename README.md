@@ -1,144 +1,105 @@
-# FedRAMP Requests For Comment (RFCs)
 
-The Federal Risk and Authorization Management Program (FedRAMP) intends to
-engage continuously and iteratively with our stakeholders. This repository will
-be used as an ongoing digital meeting place for us hear your experiences and
-perspectives.
 
-All FedRAMP RFCs are open to responses from the public and government, including
-representatives from cloud service providers, third party indepent assessment
-organizations, federal agencies, industry organizations, or individuals with an
-interest in cybersecurity and cloud services.
+# FedRAMP Training Program - RFC 0002 Breakout
 
-All RFCs will provide alternate methods for providing comments for folks who are
-unfamiliar with github or would simply prefer to submit comments in a different
-way.
+**Reference:** [RFC 0002](https://github.com/FedRAMP/rfc0002-a2la-r311-recommendations/blob/main/rfc/0002.md)
 
-> _44 U.S. Code § 3609(a)(6)_ requires FedRAMP to:
->
-> "establish and maintain a public comment process for proposed guidance and
-> other FedRAMP directives that may have a direct impact on cloud service
-> providers and agencies before the issuance of such guidance or other FedRAMP
-> directives"
+## FedRAMP Control Assessors
 
-## How will FedRAMP request comments?
+### 1. FedRAMP Authorization Boundary, Dataflow, and Network Diagrams
 
-FedRAMP will copy this repo to initiate an RFC for specific topics. All
-discussion and participation will take place in the copy, with the outcome
-merged into this repo when the RFC is closed.
+- **FedRAMP Authorization Boundary Guidance**
+- Security controls relating to the authorization boundary, dataflow, and network diagrams (including all relevant enhancements):  
+  - AC-20, CA-3, CM-12, SA-9, SC-7, SI-4
+- Essential elements of authorization boundary, dataflow, and network diagrams, including:  
+  - Subnets  
+  - Alternate processing/storage sites  
+  - Mobile applications  
+  - Development/test environments  
+  - FIPS 140 validated encryption  
+  - Multi-factor authentication methods
 
-The copied repo will have [Discussions](https://docs.github.com/en/discussions)
-enabled and stakeholders are encouraged to create new discussions with your
-feedback and interact with feedback provided by others.
+### 2. FedRAMP FIPS 140-Validated Encryption
 
-FedRAMP will communicate to the public about open RFCs via its various social
-channels, including blogs, email lists, and more. Multiple RFCs may be run
-simultaneously by the team, and the
-[status of all RFCs can be seen here](https://fedramp.gov/rfcs).
+- NIST Cryptographic Module Validation Program (CMVP)
+- FedRAMP SSP Template - Section 10
+- FedRAMP SSP Template Appendix Q - Cryptographic Modules Table
+- Security controls relating to encryption requirements (including all relevant enhancements):  
+  - AC-17, AC-18, AC-19, IA-5, MP-5, SC-7, SC-8, SC-13, SC-28
+- NIST SP 800-63-3 Digital Identity Guidelines
 
-### Providing feedback
+### 3. FedRAMP NIST SP 800-53 and 800-53A Security Control Interpretation Methods
 
-There are multiple ways to provide feedback on a full RFC:
+- Differences between leveraged and inherited security controls in a CSP’s SSP
+- Identifying applicable vs. not applicable controls in a CSP’s SSP
+- Documenting security controls in the CIS/CRM
+- Recognizing errors concerning “Configuration Settings”
+- Differentiating between Control Implementation Summary (CIS) designations
+- Recognizing inconsistencies among related security controls
+- Identifying effective policies and procedures for a given control
+- Determining if a control adequately describes who, what, when, where, why, and how in the SSP implementation
+- Validating customer responsibilities (ensuring at least one required option/solution meets FedRAMP requirements)
 
-- Participate in the Discussion
+### 4. FedRAMP Multi-Factor Authentication Requirements
 
-- Follow the instructions in the RFC to use alternative mechanisms for public
-  feedback, such as on-line forms or email.
+1. **NIST SP 800-63 (current revision)**  
+   - **Identity Assurance Levels (IAL1, IAL2, IAL3)**  
+     - Importance of IAL information  
+     - Identity proofing user journey  
+     - IAL requirements summary
+   - **Authentication Assurance Levels (AAL1, AAL2, AAL3)**  
+     - Importance of AAL information  
+     - AAL2 permitted authenticators, and verifier requirements  
+     - AAL3 permitted authenticators, and verifier requirements  
+     - AAL requirements summary
+   - **Federation Assurance Levels (FAL1, FAL2, FAL3)**  
+     - Importance of FAL information  
+     - Federation threats and attacks  
+     - Federation threat mitigation strategies  
+     - SAML, Kerberos, OpenID Connect and their relation to the FAL paradigm
 
-- Suggest changes to a document by opening a pull request (you will need to fork
-  the repo first). The pull request must suggest one or more changes and
-  describe the rationale for the change(s). Pull requests will be treated as
-  comments.
+2. FedRAMP security control baselines (including all relevant enhancements) related to MFA:  
+   - IA-2, IA-2(1), IA-2(2), IA-2(6), IA-5, IA-8
 
-It is important that each bit of feedback is _concise_ and _actionable_,
-providing enough information to allow the document maintainers to adequately
-address the feedback.
+3. Overview of NIST SP 800-63 Digital Identity Guidelines FAQs:  
+   - Identity proofing  
+   - Authentication  
+   - Federation and assertions
 
-> **Please follow our
-> [Code of Conduct](https://github.com/FedRAMP/rfcs/blob/main/CODE_OF_CONDUCT.md)
->  at all times!**
+---
 
-### How FedRAMP will participate
+## FedRAMP Pentesters
 
-The FedRAMP team may interact with the public discussion in this repository in a
-limited manner, similar to a digital town hall, as follows:
+All personnel in the “penetration tester” role must receive focused internal training on four (4) FedRAMP focus areas:
 
-- Requesting clarification or additional information if the content of a comment
-  is not clear to the FedRAMP reviewer.
+### 1. Vulnerability Scanning vs. Penetration Testing
 
-- Acknowledging that comments have been reviewed.
+- **Penetration Testing**  
+  - Scope of penetration testing  
+  - Threat models applicable to a particular system  
+  - Alignment with FedRAMP security control baselines and associated controls
+- **Vulnerability Scanning**  
+  - Scope of vulnerability scanning
 
-- Responding to requests for clarification from the public when that
-  clarification would be relevant to a significant portion of the public.
+### 2. MITRE ATT&CK® Matrix for Enterprise
 
-> FedRAMP will consider only the content of the message when responding, and
-> will not prioritize or otherwise consider the individual or organization when
-> determining which messages to respond to. A response from FedRAMP is not an
-> endorsement and does not represent concurrence with the content.
+- Definition and purpose of the MITRE ATT&CK® Matrix for Enterprise  
+  - When it is used  
+  - Why it is used  
+  - How it is used
 
-Each public comment request may have multiple rounds, with comments being
-addressed in no smaller than 30 day increments.
+### 3. FedRAMP Mandatory Attack Vectors and Applicability
 
-The end of the public comment period **does not mean the policy will be
-immediately implemented.** Other governance activities and final approval will
-be required; when ready for adoption or publication, final policies or documents
-will be widely shared publicly with appropriate implementation activities.
+- Attack Vector 1: External to Corporate
+- Attack Vector 2: External to CSP Target System
+- Attack Vector 3: Tenant to CSP Management System
+- Attack Vector 4: Tenant-to-Tenant
+- Attack Vector 5: Mobile Application as part of Target System
+- Attack Vector 6: Client-side Component as part of Target System
 
-_Currently, only members of the FedRAMP team can initiate the formal RFC
-process._
+### 4. FedRAMP Penetration Testing Reporting Requirements
 
-## Why should I submit RFC feedback?
+- Familiarity with penetration testing rules of engagement
+- Reporting penetration testing deficiencies in a security assessment package
 
-FedRAMP stakeholders, including cloud service providers (CSPs), security
-professionals, government agencies, and industry experts, may provide public
-feedback on these documents for several key reasons:
-
-- Influencing Policy and Framework Development: FedRAMP documents, such as
-  updates to security guidelines, assessment frameworks, or requirements impact
-  stakeholders directly. By providing feedback, stakeholders have an opportunity
-  to shape the policies to ensure they are practical, effective, and align with
-  industry standards. This can help ensure that the requirements and guidelines
-  are feasible for implementation and improve overall security.
-
-- Addressing Practical Implementation Challenges: Stakeholders who are directly
-  involved in the FedRAMP authorization or in the process of securing federal
-  could use may experience unanticipated practical challenges. Public feedback
-  allows these stakeholders to highlight real-world issues, propose solutions,
-  and ensure that policies are aligned with technological trends and operational
-  realities.
-
-- Advocating for Cost-Effectiveness and Efficiency: Cloud service providers and
-  other affected parties are often concerned about the costs and administrative
-  burden associated with meeting FedRAMP requirement. Providing feedback allows
-  stakeholders to advocate for streamlined processes, suggest more efficient
-  frameworks, or raise concerns about requirements that might be too expensive
-  or complex.
-
-- Ensuring Transparency and Accountability: Public feedback fosters an open
-  dialogue between the government and industry. It promotes transparency and
-  ensures that stakeholders are part of the decision-making process. This
-  collaboration helps build trust between federal agencies and private sector
-  participants and ensures that the government remains accountable for
-  considering diverse perspectives.
-
-- Mitigating Security Risks: Security professionals may provide feedback to
-  ensure that FedRAMP security guidelines are rigorous enough to mitigate
-  evolving cybersecurity threats. Their insights help ensure that the
-  government's security posture remains up-to-date and effective in protecting
-  sensitive data.
-
-- Encouraging Innovation: By participating in the public feedback process,
-  stakeholders can propose innovative approaches, highlight emerging
-  technologies, and suggest ways to incorporate these into the FedRAMP program.
-  This ensures that the program remains adaptive to the fast-paced evolution of
-  cloud technologies.
-
-Ultimately, public feedback helps ensure that FedRAMP documents and policies
-reflect the needs and expertise of both government and private sector entities,
-fostering a more secure, efficient, and collaborative cloud security
-environment.
-
-## License
-
-All contributions to this repository are licensed under the
-[CC0 1.0 Universal dedication](LICENSE.md) unless otherwise specified.
+---
